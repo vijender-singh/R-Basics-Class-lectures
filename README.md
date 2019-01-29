@@ -67,7 +67,7 @@
         Other distribution
         Summary sheet
 ### Basic Statistics
-        Correlation and copvariance
+        Correlation and covariance
         T-tests
         ANOVA
         Summary sheet

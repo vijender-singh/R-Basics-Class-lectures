@@ -1,4 +1,39 @@
 # R-From-Basics-to-advanced-analystics
+## Topics covered
+### R introduction
+### R environment
+### R Packages
+        CRAN
+        Bioconductor
+        Summary sheet
+### Basics of R Object
+        Basic Mathmatical oprations
+        Variables
+        Data Types
+        Vectors
+        Calling Function
+        Function Documentation
+        Missing Data
+        Summary sheet
+### Data Structures
+        Data.frames
+        Lists
+        Matrices
+        Arrays
+        Summary sheet
+### Reading Data into R
+        Reading CSV files
+        tables, .txt files
+        .Rdata objects
+        others
+        Summary sheet
+### Writing R functions
+        Hello, world!
+        Function Arguments
+        Return Values
+        do.call
+        Summary sheet
+### Control Statements
         ifelse
         for loops
         While loops

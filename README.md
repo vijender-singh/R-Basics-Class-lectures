@@ -1,11 +1,6 @@
 # R-From-Basics-to-advanced-analystics
 ## Topics covered
 ### R introduction
-### R environment
-### R Packages
-        CRAN
-        Bioconductor
-        Summary sheet
 ### Basics of R Object
         Basic Mathmatical oprations
         Variables

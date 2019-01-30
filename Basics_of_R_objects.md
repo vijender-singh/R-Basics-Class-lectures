@@ -44,11 +44,11 @@ Simple mathematical calculations can be carried out using R. Some examples are d
 ```
 Spaces between operators is not required but it is a good coding practice.
 
-Every time we do a calculation the operation is done and result is displayed.  If we have to use the result value 100 times we have to do the same operation 100 times.  It is ok if the calculations are simple but if we considera scenerio for complex mathematical calculation on large table (100,000 rows, 1000 columns) this will become coputationally intensive and waste of resources. 
-In such situations **Variables** comes handy as they can store a value or result and that value can be called anytime needed.
+Every time we do a calculation the operation is completed and result is displayed.  If we want to use the result of a calculation 100 times we have to do the same operation 100 times.  It is ok if the calculations are simple, however, if we considera scenerio for complex mathematical calculation on large table (100,000 rows, 1000 columns) this will become coputationally intensive and waste of resources. 
+In such situations **Variables** comes handy as they can be assigned a value or result and that value can be called anytime needed.
 
 **Variables**
-Variables are essential part of any programming language.  Unlike C, R Does not require a variable to be declared. A variable can take or hold different type of data/objects dynamically.
+Variables are essential part of any programming language.  Unlike C(`extern int a` : declaration of int variable "a" in C) , R Does not require a variable to be declared. A variable can take or hold different type of data/objects dynamically.
 
 Variable can be alphanumeric and can contain "." and "_", however they cannot start with a number or an underscore.
 
@@ -90,11 +90,11 @@ e.g
 > b
 [1] 6
 > a
-[1] 5                       y
+[1] 5                       
 # x didnot change, because as soon as we assigned a <- b <- 5  , it became x<-5 and y<-5 not x<-y.
 
 
-# Another way of assigning varaible, very USEFUL when variable need to be created dynamically in a script
+# Another way of assigning varaible, which is very USEFUL when variable need to be created dynamically in a script
 > assign("year",2019)   
 > year
 [1] 2019
@@ -262,7 +262,7 @@ Logical is the way of representing data which is either `TRUE` or `FALSE`.  Nume
 ```
 **Vectors**
 
-A vector is collection of values/elements of the same type. A vector can be collection of exclusively `numeric` or `character` or `logical` value types. A vector cannot be of mix type. If they are not of the same type, the values will be coerced to one type.   
+A vector is collection of elements of the same type. A vector can be collection of exclusively `numeric` or `character` or `logical` value types. A vector cannot be of mix type. If they are not of the same type, the values will be coerced to one type.   
 
 1) Vectors are the simplest of the containers in R holding multiple elements.  
 2) R is a vectorised language that means that an operation is automatically applied to each element of the vector without  the need of loop through the vector. 
@@ -312,7 +312,7 @@ NULL
 > (age < 40) *2
 [1] 0 2 0 0 2
 ```
-Creating numeric vectors. 
+**Creating numeric vectors.** 
 Syntax: m <- c(a:b)  # create vector m containing elemets starting from a and every next element increase or decreases by 1 untill the last value <=b.
 ```r
 > x <- c(1:10)
@@ -407,7 +407,7 @@ Ice Tea
    Latte Expresso  Ice Tea 
     2.50     3.10     3.25 
 ```
-Coercio:  Changing the type of element in a vector. character <- numeric <->integer -> character
+Coercion:  Changing the type of element in a vector. 
 
 ```R
 > height <- c(175, 181,164,159)

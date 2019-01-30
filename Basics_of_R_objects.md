@@ -2,8 +2,8 @@
 
 **Maths operations**
 
-Simple mathematical calculations can be carried out using R. Some exapmles are demonstrated below.
-However every time we do a calculation the operation is done and result is displayed.  If we have to use the result value 100 times we have to do the same operation 100 times.  It is ok if the calculations are simple but if we considera scenerio for complex mathematical calculation on large table (100,000 rows, 1000 columns) this will become coputationally intensive and waste of resources.
+Simple mathematical calculations can be carried out using R. Some examples are demonstrated below.
+
 
 ```R
 > 2 + 1       # Addition
@@ -44,7 +44,8 @@ However every time we do a calculation the operation is done and result is displ
 ```
 Spaces between operators is not required but it is a good coding practice.
 
-However every time we do a calculation the operation is done and result is displayed.  If we have to use the result value 100 times we have to do the same operation 100 times.  It is ok if the calculations are simple but if we considera scenerio for complex mathematical calculation on large table (100,000 rows, 1000 columns) this will become coputationally intensive and waste of resources.  Here **Variables** comes handy as they can store a value or result and can be called in anytime needed.
+Every time we do a calculation the operation is done and result is displayed.  If we have to use the result value 100 times we have to do the same operation 100 times.  It is ok if the calculations are simple but if we considera scenerio for complex mathematical calculation on large table (100,000 rows, 1000 columns) this will become coputationally intensive and waste of resources. 
+In such situations **Variables** comes handy as they can store a value or result and that value can be called anytime needed.
 
 **Variables**
 Variables are essential part of any programming language.  Unlike C, R Does not require a viable to be declared. A variable can be assigned different type of objects dynamically.

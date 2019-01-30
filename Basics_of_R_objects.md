@@ -56,49 +56,60 @@ Variable assignment is carried out by using `<-` or `=` operators. `<-` supersed
 
 e.g
 ```R
-> x <- 2  # x assigned value 2
+> x <- 2  
+# x assigned value 2
 > x
 [1] 2
 
-> y = 5  # y assigned value 5
+
+> y = 5  
+# y assigned value 5
 > y
 [1] 5
 
-> x="Nucleosome"    # x assigned value "Nucleosome" a word or also called as character string
+
+> x="Nucleosome"    
+# x assigned value "Nucleosome" a word or also called as character string
 > x
 [1] "Nucleosome"
+
 
 > source="Bioconductor"
 > source
 [1] "Bioconductor"
-> Source                            # OOOOOPpppps Variable names are case sensetive
-Error: object 'Source' not found
 
-> a <- b <- 5                     # Indirect assignment
+
+> a <- b <- 5                     
+# Indirect assignment
 > a
 [1] 5
 > b
 [1] 5
-> b <- 6                      # Changed value of y, does x also changes?
+> b <- 6                      
+# Changed value of y, does x also changes?
 > b
 [1] 6
 > a
-[1] 5                       # x didnot change, because as soon as we assigned a <- b <- 5  , it became x<-5 and y<-5 not x<-y
+[1] 5                       y
+# x didnot change, because as soon as we assigned a <- b <- 5  , it became x<-5 and y<-5 not x<-y.
 
-> assign("year",2019)  # Another way of assigning varaible, very USEFUL when variable need to be created dynamically in a script
+
+# Another way of assigning varaible, very USEFUL when variable need to be created dynamically in a script
+> assign("year",2019)   
 > year
 [1] 2019
 
-> NY2Boston <- 5     # 5 is numeric
+
+> NY2Boston <- 5     
+# 5 is numeric
 > NY2Boston
 [1] 5
 
-> NY2Boston <- "5h"    # "5h" is a string
+> NY2Boston <- "5h"    
+# "5h" is a string
 > NY2Boston
 [1] "5h"
 
-> NY2Boston <- 5h
-Error: unexpected symbol in "NY2Boston <- 5h"
 
 ```
 Variables created in a session are present in your environment.  To list all the variables use `ls()` or check the *Environment* Tab of R studio.
@@ -109,7 +120,8 @@ To remove a given variable try `rm(variableName)`.  In order to remove all the e
 ##Data Types
 
 **Numeric Data**
-It include integers and fractions.
+It include integers and fractions/decimal.
+
 ```R
 > x <- 3
 > is.numeric(x)

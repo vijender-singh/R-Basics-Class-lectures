@@ -48,7 +48,7 @@ Every time we do a calculation the operation is done and result is displayed.  I
 In such situations **Variables** comes handy as they can store a value or result and that value can be called anytime needed.
 
 **Variables**
-Variables are essential part of any programming language.  Unlike C, R Does not require a viable to be declared. A variable can be assigned different type of objects dynamically.
+Variables are essential part of any programming language.  Unlike C, R Does not require a variable to be declared. A variable can take or hold different type of data/objects dynamically.
 
 Variable can be alphanumeric and can contain "." and "_", however they cannot start with a number or an underscore.
 
@@ -56,44 +56,44 @@ Variable assignment is carried out by using `<-` or `=` operators. `<-` supersed
 
 e.g
 ```R
-> x <- 2
+> x <- 2  # x assigned value 2
 > x
 [1] 2
 
-> y = 5
+> y = 5  # y assigned value 5
 > y
 [1] 5
 
-> x="Nucleosome"
+> x="Nucleosome"    # x assigned value "Nucleosome" a word or also called as character string
 > x
 [1] "Nucleosome"
 
 > source="Bioconductor"
 > source
 [1] "Bioconductor"
-> Source
+> Source                            # OOOOOPpppps Variable names are case sensetive
 Error: object 'Source' not found
 
-> a <- b <- 5
+> a <- b <- 5                     # Indirect assignment
 > a
 [1] 5
 > b
 [1] 5
-> b <- 6
+> b <- 6                      # Changed value of y, does x also changes?
 > b
 [1] 6
 > a
-[1] 5
+[1] 5                       # x didnot change, because as soon as we assigned a <- b <- 5  , it became x<-5 and y<-5 not x<-y
 
-> assign("year",2019)
+> assign("year",2019)  # Another way of assigning varaible, very USEFUL when variable need to be created dynamically in a script
 > year
 [1] 2019
 
-> NY2Boston <- 5
+> NY2Boston <- 5     # 5 is numeric
 > NY2Boston
 [1] 5
 
-> NY2Boston <- "5h"
+> NY2Boston <- "5h"    # "5h" is a string
 > NY2Boston
 [1] "5h"
 

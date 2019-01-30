@@ -2,7 +2,7 @@
 
 #### Origin
 
-`{R}` originated from `S`.   `S` was a statistical programming language developed by John Chambers in 1976 at Bell labs. `S` was a properitory software and was not available for researchers.  **R**obert Gentleman and **R**oss Ihaka, University of Auckland, New Zealand came up with the idea of `{R}` as an free open source statistical language in 1992.  In 1995 they released its initial version and a stable beta version was released in 2000. Since `{R}` is implemented from `S` combined with lexical scoping semantics, inspired by Scheme. 
+`R` originated from `S`.   `S` was a statistical programming language developed by John Chambers in 1976 at Bell labs. `S` was a properitory software and was not available for researchers.  **R**obert Gentleman and **R**oss Ihaka, University of Auckland, New Zealand came up with the idea of `R` as an free open source statistical language in 1992.  In 1995 they released its initial version and a stable beta version was released in 2000. Since `R` is implemented from `S` combined with lexical scoping semantics, inspired by Scheme. 
 
 The latest release (2018-12-20, Eggshell Igloo) R-3.5.2 .
 The Comprehensive R archive Network (CRAN : https://cran.r-project.org/) is a network of ftp and web servers around the world that store identical, upup-to-date, versions of code and documentation for R.
@@ -21,11 +21,11 @@ Using R studio tabs `Tools > Install Packages` and provide the name of package a
 ##### or 
 
 through CLI 
-```{R}
+```R
 install.packages("ggplot2")
 ```
 to install from git hub try
-```{R}
+```R
 install_github(repo="coefplot")
 ```
 ###Bioconductor packages
@@ -33,45 +33,45 @@ Bio conductor provides tools for the analysis and comprehension of high-throughp
 
 Source `biocLite.R` to install bi conductor packages in older version of R (3.4 and older)
 
-```{R}
+```R
 source("http://bioconductor.org/biocLite.R")
 ```
 to install a package
-```{R}
+```R
 biocLite("edgeR",version="3.8")
 ```
 
 `BiocManager` is for managing Bio conductor packages in R>3.5.  To load BiocManager,
-```{R}
+```R
 if (!requireNamespace("BiocManager"))
     install.packages("BiocManager")
 BiocManager::install()
 ```
 to install a package
-```{R}
+```R
 BiocManager::install("edgeR", version = "3.8")
 ```
 
 Once the packages are installed they are required to be loaded to use the functions/code inside the package. Both `require` and `library` function help in loading the packages.
-```{R}
+```R
 require(EdgeR)
 ```
 or 
-```{R}
+```R
 library(EdgeR)
 ```
 To suppress the messages that are displayed on loading a package set `quietly=TRUE`
-```{R}
+```R
 require(EdgeR, quietly=TRUE)
 ```
 **Unloading a package**
-```{R}
+```R
 detach("EdgeR")
 ```
 
 **Important:**
 
 It is not uncommon for functions in different packages to have the same name. For example `coefplot` is in both `arm` and `coefplot`.  If both packages are loaded, the function in the package loaded last will be invoked when calling that function. A way around this is to precede the function with the name of the package, separated by two colons (::).
-```{R}
+```R
 arm::coefplot(object)
 coefplot::coefplot(object)

@@ -27,8 +27,7 @@ Add another individual: Vison, NA,175,77,M
 i. Add another column to dataframe with their humor levels as:  
 `good, average,average,excellent,good,poor,good,good,Average,Average`
   1. New dataframe with fitness humor as charachter vector.
-  2. New dataframe with fitness humor as factor without oreder of levels.
-  3. New dataframe with fitness humor as factor with order poor<average<good
+  2. New dataframe with fitness humor as factor as levels.
 j. Make names to rownames
 k. Subset dataframe with first 4 rows.
 l. Subset dataframe with column 1,2,3,5 and rows 3,4,5,7

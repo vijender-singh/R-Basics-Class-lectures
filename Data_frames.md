@@ -29,7 +29,8 @@ chip1
 or
 
 ```{R}
-chip2<-data.frame(Gene=c("Gene1","Gene2","Gene3","Gene4","Gene5","Gene6","Gene7","Gene8","Gene9","Gene10"), Chromosome = c("Chr1","Chr1","Chr1","Chr1","Chr2","Chr2","Chr2","Chr3","Chr3","Chr4"), Position=c(11234,21234,25452,32414,156009,297862,299220,312112,141789,13114), Enrichment=c(2,2.3,3.5,2.8,1.98,2.76,3.76,2.45,NA,3.4))
+chip2<-data.frame(Gene=c("Gene1","Gene2","Gene3","Gene4","Gene5","Gene6","Gene7","Gene8","Gene9","Gene10"), 
+Chromosome = c("Chr1","Chr1","Chr1","Chr1","Chr2","Chr2","Chr2","Chr3","Chr3","Chr4"), Position=c(11234,21234,25452,32414,156009,297862,299220,312112,141789,13114), Enrichment=c(2,2.3,3.5,2.8,1.98,2.76,3.76,2.45,NA,3.4))
 
 chip2
 

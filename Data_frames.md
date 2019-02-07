@@ -107,7 +107,9 @@ chip2[1:3,2] # 2 column 1to 3 rows
 
 class(chip2[1:3,2]) # Output is not a dataframe
 
-chip2[1:3,2,drop=FALSE] # Output is a datatframe
+chip2[,2] # Output will be 2nd column as vector after dropping dimension.
+
+chip2[,2,drop=FALSE] # Output is a datatframe as dimensions were not dropped.
 
 ```
 

@@ -1,0 +1,52 @@
+Refer to the tutorial:
+https://github.com/vijender-singh/R-From-Basics-to-advanced-analystics/blob/master/Data_frames.md 
+
+
+STRAT: 
+Write a R program to create a data frame from five given vectors.
+## Names     Age Height Weight Sex
+## IronMan    42    157     65   M
+## Hawkeye    32    167     54   M
+## Hulk       36    175     72   M
+## Blackwidow 24    188     55   F
+## Wasp       36    168     68   F
+## Thanos     43    153     120  M
+## Okoye      32    173     59   F
+## Thor       33    167     63   M
+## Antman     29    165     65   M
+## DrStrange  43    167     69   M
+a. Find the dimension of the dataframe.
+b. What is the class of Names and Sex ?
+c. Try converting them to charcters.
+d. What are the means of Age Height and weight columns.
+e. Check your results by using the command `summary(dataframe)`.
+f. Subset the datframe to make another dataframe with Name, Height and Sex.
+g. Select Name as dataframe and vector using all the possible ways.
+h. count the number of F and M in the data frame.
+Add another individual, Vison, NA,175,77,M
+i. Add another column to dataframe with their humor levels as:  good, average,average,excellent,good,poor,good,good,Average,Average
+  1. New dataframe with fitness humor as charachter vector.
+  2. New dataframe with fitness humor as factor without oreder of levels.
+  3. New dataframe with fitness humor as factor with order poor<average<good
+j. Make names to rownames
+k. Subset dataframe with first 4 rows.
+l. Subset dataframe with column 1,2,3,5 and rows 3,4,5,7
+
+
+Add this new information in form of dataframe to the old dataframe (above) such that
+## Names     employmentStatus 
+## Ironman        Yes    
+## Hawkeye        Yes  
+## WinterSoldier  No
+## Wasp           No
+## Blackwdow      Yes
+## Thanos         No
+## CaptAmerica    No
+## Blackpanther   No
+## Falcon         Yes
+## okoye          Yes
+
+1. the new dataframe has only the common observations.
+2. the new dataframe all the observations of old dataframe but no new observations of new dataframe.
+3. the new dataframe all the observations of new dataframe but no additional observations of old dataframe..
+4. the new dataframe has all the observations of old and new dataframe.

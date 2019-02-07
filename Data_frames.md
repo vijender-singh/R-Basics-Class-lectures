@@ -16,7 +16,7 @@ chip
 ```
 In the above example we have created a dataframe `chip` with 10 rows and 4 columns.  We can create the same data frame with column labels as
 
-```{R}
+```R
 Gene<-c("Gene1","Gene2","Gene3","Gene4","Gene5","Gene6","Gene7","Gene8","Gene9","Gene10")
 Chromosome<-c("Chr1","Chr1","Chr1","Chr1","Chr2","Chr2","Chr2","Chr3","Chr3","Chr4")
 Position<-c(11234,21234,25452,32414,156009,297862,299220,312112,141789,13114)
@@ -28,7 +28,7 @@ chip1
 ```
 or
 
-```{R}
+```R
 chip2<-data.frame(Gene=c("Gene1","Gene2","Gene3","Gene4","Gene5","Gene6","Gene7","Gene8","Gene9","Gene10"), 
 Chromosome = c("Chr1","Chr1","Chr1","Chr1","Chr2","Chr2","Chr2","Chr3","Chr3","Chr4"), Position=c(11234,21234,25452,32414,156009,297862,299220,312112,141789,13114), Enrichment=c(2,2.3,3.5,2.8,1.98,2.76,3.76,2.45,NA,3.4))
 
@@ -42,7 +42,7 @@ In the above example the 4 vectors each with a single data type became 4 columns
 
 **Attributes of Dataframe**
 
-```{R}
+```R
 nrow(chip2) # Number of Rows
 
 ncol(chip2) # Number of columns
@@ -68,7 +68,7 @@ class(chip2)  # object type
 ```
 
 **Viewing Dataframes**
-```{R}
+```R
 head(chip2)   # Display top of the dataframe, default 6 rows
 
 head(chip2,4) # Outputs first 4 rows
@@ -85,7 +85,7 @@ View(chip2)  # Output full dataset
 
 The columns of a dataframe can be selected either using column index or column names.  The indexing in R is 1 based unlike python which is zero based. 
 
-```{R}
+```R
 chip2[1]     # Select 1st column,  output is a dataframe
 
 chip2$Chr    # Select column with name Chr same as chip2[,2], Output is a vector
@@ -113,7 +113,7 @@ chip2[1:3,2,drop=FALSE] # Output is a datatframe
 
 **Selecting/Omitting columns with NA**
 
-```{R}
+```R
 #SELECTING
 # Selecting the row(s) with NA in column 4 of chip2.  If there were NAs in any other column that would be ignored.
 
@@ -149,7 +149,7 @@ The excercise below demonstartes how to merge or combine two dataframes using `R
  Below is an example of merging 2 dataframes `chip2` and `exp` using the column name `geneID` present in both datasets.  
  **NOTE:  Be sure that the column used for merging holds the same type data.  There will be instances when the column name is same but the data under them could be of different types.**
  
-```{R}
+```R
 chip2<-data.frame(Gene=c("Gene1","Gene2","Gene3","Gene4","Gene5","Gene6","Gene7","Gene8","Gene9","Gene10"), 
                   Chromosome = c("Chr1","Chr1","Chr1","Chr1","Chr2","Chr2","Chr2","Chr3","Chr3","Chr4"),
                   Position=c(11234,21234,25452,32414,156009,297862,299220,312112,141789,13114), 
@@ -182,7 +182,7 @@ chip2exp
 
 In some cases the dataframes that are being merged could have different number of rows as shown in example below. `dfA` is dataframe with 5 rows X 2 columns, `dfB` with 6rows X 3columns.  There will be 4 possible ways in which we can combine these 2 data frames.
 
-```{R}
+```R
 
 dfA <- data.frame(geneID=c("ASF1", "GKT2","MMN34","TKT9","ZMN3"),chr=c(1,1,2,4,4))
 dfA
@@ -192,7 +192,7 @@ dfB
 ```
 
 **OptionA** : Merged output dataframe `dfAB1` has only the common observations (rows). 
-```{R}
+```R
 
 dfAB1 <- merge(dfA,dfB, by="geneID")
 dfAB1
@@ -200,7 +200,7 @@ dfAB1
 
 **OptionB** : Merged output dataframe `dfAB2` has all the observations (rows) of `dfA` and only the common one's from `dfB`. NA's will be introduced in columns of dfB where the values are not available.
 
-```{R}
+```R
 
 dfAB2 <- merge(dfA,dfB, by="geneID", all.x=T)
 dfAB2
@@ -209,7 +209,7 @@ dfAB2
 
 **OptionC** : Merged output dataframe `dfAB3` has all the observations (rows) of `dfB` and only the common one's from `dfA`. NA's will be introduced in columns of dfB where the values are not available.
 
-```{R}
+```R
 
 dfAB3 <- merge(dfA,dfB, by="geneID", all.y=T)
 dfAB3
@@ -217,7 +217,7 @@ dfAB3
 
 **OptionD** : Merged output dataframe `dfAB4`  has all the observations (rows) of `dfB` and `dfA`.  The common ones are represented only once. NA's will be introduced in columns where the values are not available.
 
-```{R}
+```R
 
 dfAB4 <- merge(dfA,dfB, by="geneID", all=T)
 dfAB4
@@ -236,7 +236,7 @@ Dataframes can be appended by adding new rows and columns.  The two function sui
 
 In example below, A new row is added to dataframe dfA for `geneID` "VIJ08" with `chr` value 5. To do so we first created a dataframe of 1 row and then used rbind function to add it to `dfA`.
 
-```{R}
+```R
 newgene<-data.frame(geneID="VIJ08",chr=5)
 newgene
 
@@ -247,7 +247,7 @@ dfA
 **Adding a new column**
 
 In example below, a new column `cellcycle` is added to dataframe dfAB4.
-```{R}
+```R
 cellcycle<-c("G1","G2","G1","M","S","S","M")
 
 dfAB4<-cbind(dfAB4,cellcycle)

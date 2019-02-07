@@ -139,9 +139,9 @@ chip2[!is.na(chip2$Enr),]
 
 ```
 
-**PLease Practise different scenerios and posiblities as you can.**
+**Please Practise different scenerios.**
 
-#MERGING TABLES USING WITH BASE R FUNCTION merge
+MERGING TABLES USING WITH BASE R FUNCTION `merge`
 
 The excercise below demonstartes how to merge or combine two dataframes using `R`'s in built function `merge`. The help file for `merge`
  function can be obtained using `?merge` command. The syntax of `merge` changes based on the dataframes that are to be joined.

@@ -1,4 +1,4 @@
-#Lists
+## Lists
 
 List can be considered as containers that can hold R objects either of the same type or varying types.  A list can contain a vector , dataframe, variable, matrix, arrays or even another list in it.  Lists can be viewed as a solution to hold objects from various stages of analysis at a single place.
 Lists are created with `list(element1,element2,element3,...,elementN)` function and each argument becomes the element of the list. Like `data.frames` lists can have names and also the elements too can have names using which elements can be stored and accessed.
@@ -143,9 +143,9 @@ rank <- list("a"=1,"b"=2,"b"=3)
 
 ```
 
-***************END OF LIST*************
+------END OF LIST--------
 
-#Matrices
+## Matrices
 
 Simply defined matrices are like dataframes with only one datatype either **numeric** or **integer** and never a character.
 
@@ -276,10 +276,10 @@ summary(normCountsData)
 
 ```
 
-***************END OF MATRICES*************
+--------------END OF MATRICES------------------
 
 
-# Arrays
+## Arrays
 
 An array is essentially a multidemenional matrix.  The elements should be of same type and individual elements can accessed in a similar fashion using square brackets [a,b,c].  This indicates a X b X c dimensional array.
 The first value a is the row, second value b is the column and third value c is the outer dimension.

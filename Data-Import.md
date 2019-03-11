@@ -1,6 +1,6 @@
 ### Data Import/export
 
-`read.csv` or `read.table` are 2 important functions available in base R to read **.csv** and **.txt** files.  These are the most commanly used functions for reading in niological datasets unless the data is read from database servers.
+`read.csv` or `read.table` are 2 important functions available in base R to read **.csv** and **.txt** files.  These are the most commanly used functions for reading in biological datasets unless the data is read from database servers.
 
 **SYNTAX**
 ```R

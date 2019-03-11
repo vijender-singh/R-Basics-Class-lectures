@@ -3,7 +3,7 @@
 List can be considered as containers that can hold R objects either of the same type or varying types.  A list can contain a vector , dataframe, variable, matrix, arrays or even another list in it.  Lists can be viewed as a solution to hold objects from various stages of analysis at a single place.
 Lists are created with `list(element1,element2,element3,...,elementN)` function and each argument becomes the element of the list. Like `data.frames` lists can have names and also the elements too can have names using which elements can be stored and accessed.
 
-```{R}
+```R
 # Simple list with numeric and character elements
 list(12,22,"chr")
 
@@ -28,7 +28,7 @@ list(c("chr1","chr2","chr3"),c(12312,57867,46587),"Sample1",124546654, chip2)
 
 As we have seen earlier that its of no use if we cannot retrieve this list later.  So we will assign it to variable, lets say list1
 
-```{R}
+```R
 list1 <- list(c("chr1","chr2","chr3"),c(12312,57867,46587),"Sample1",124546654, chip2)
 list1
 ```
@@ -36,7 +36,7 @@ list1
 
 we can access the elemnets based on the index with syntax `list[[n]]` where n is the index of elemnet
 
-```{R}
+```R
 # to access the vector c(12312,57867,46587) whose index is 2 in list1 we will use
 list1[[2]]
 
@@ -51,7 +51,7 @@ We can access the above list "list1" anytime later during our data analysis sess
 Naming of elements can be done either **while creating the list** or **add names later to the elements of existing list**.  We will try the second option as we already have the list and then will try naming them while creating the list.
 
 **Add names later to the elements of existing list**
-```{R}
+```R
 # We will add names to the list1
 
 names(list1) <- c("selChrom","selpos","sample","EnrTable")
@@ -61,7 +61,7 @@ list1
 ```
 Since the name vector `c("selChrom","selpos","sample","EnrTable") ` has only 4 names, so the first 4 elements of lists have names assigned to them and the last one is left "NA". If we donot want to name an element leave a "" empty quote at the corresponding place, otherwise provide a name to each element of the list.
 
-```{R}
+```R
 names(list1) <- c("selChrom","selpos","sample","","EnrTable")
 list1
 #OR
@@ -79,7 +79,7 @@ list1 <- list(selectedChrom=c("chr1","chr2","chr3"),selectedPosn=c(12312,57867,4
 
 We can access elements of the list using names provided we have assigned a name to that element of the list.
 
-```{R}
+```R
 # we can access the vector "selpos" of list1 2 ways
 
 list1$selpos
@@ -118,7 +118,7 @@ list1
 ```
 
 **Changing value of an existing element**
-```{R}
+```R
 list1[[6]] <- 36738256
 list1
 
@@ -129,7 +129,7 @@ list1
 ```
 
 **Attributes of list**
-```{r}
+```R
 length(list1)
 
 ```
@@ -138,7 +138,7 @@ length(list1)
 If you assign 2 elements of the list a same name, which element will be reported if you retrieve the element by name.
 as in example below what will be reported if I try `rank[["b"]` or `rank$b`
 
-```{R}
+```R
 rank <- list("a"=1,"b"=2,"b"=3)
 
 ```
@@ -163,7 +163,7 @@ syntax of creating matrices
 **dimnames**  :: A dimnames attribute for the matrix: NULL or a list of length 2 giving the row and column names respectively. <br /> 
 
 
-```{R}
+```R
 mc <- matrix(1:25,ncol=5)
 mc
 
@@ -182,7 +182,7 @@ mrc3<- matrix(1:25,nrow=5,byrow=TRUE,dimnames=list(c("a","b","c","d","e"),c("k",
 ```
 Try different attributes
 
-```{R}
+```R
 nrow(mrc3)
 ncol(mrc3)
 dim(mrc3)
@@ -207,7 +207,7 @@ mrc3 %*% mrc
 
 Generate a counts dataframe holding expression `count` of genes from different samples.
 
-```{R}
+```R
 
 countData<-data.frame(gene=c("ATk1","CTA1","BCL5","DRA12","VKT11"),
                       sample1=c(12,220,323,452,111),
@@ -218,20 +218,20 @@ countData
 
 ```
 **Step1: Add RowNames**
-```{R}
+```R
 rownames(countData) <- countData$gene
 countData
 
 ```
 **Step2 : Drop gene column**
 
-```{R}
+```R
 countData<-countData[,-1]
 countData
 ```
 **Step3 : Convert into matrix**
 
-```{R}
+```R
 class (countData)
 
 countDatam <-as.matrix(countData)
@@ -252,7 +252,7 @@ class(countDataD)
 
 The calculations below is to show the use of Matrices, We will discuss it in the class
 
-```{R}
+```R
 #Data Summary
 summary(countDataD)
 
@@ -284,7 +284,7 @@ summary(normCountsData)
 An array is essentially a multidemenional matrix.  The elements should be of same type and individual elements can accessed in a similar fashion using square brackets [a,b,c].  This indicates a X b X c dimensional array.
 The first value a is the row, second value b is the column and third value c is the outer dimension.
 
-```{R}
+```R
 #create array of size 2 X 3 X 4 dimension
 arrayOne <- array(1:24,dim=c(2,3,4))
 arrayOne

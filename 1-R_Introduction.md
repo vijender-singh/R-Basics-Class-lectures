@@ -71,7 +71,7 @@ detach("EdgeR")
 
 **Important:**
 
-It is not uncommon for functions in different packages to have the same name. For example `coefplot` is in both `arm` and `coefplot`.  If both packages are loaded, the function in the package loaded last will be invoked when calling that function. A way around this is to precede the function with the name of the package, separated by two colons (::).
+It is quite possible for functions in different packages to have the same name. For example `coefplot` is in both `arm` and `coefplot`.  If both packages are loaded, the `coefplot` function will be executed from the package that was loaded last (or more recent). A way around this is to precede the function with the name of the package, separated by two colons (::).
 ```{R}
 arm::coefplot(object)
 coefplot::coefplot(object)

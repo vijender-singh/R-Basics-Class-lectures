@@ -2,7 +2,7 @@
 
 #### Origin
 
-`{R}` originated from `S`.   `S` was a statistical programming language developed by John Chambers in 1976 at Bell labs. `S` was a properitory software and was not available for researchers.  **R**obert Gentleman and **R**oss Ihaka, University of Auckland, New Zealand came up with the idea of `{R}` as an free open source statistical language in 1992.  In 1995 they released its initial version and a stable beta version was released in 2000. Since `{R}` is implemented from `S` combined with lexical scoping semantics, inspired by Scheme. 
+`R` originated from `S`.   `S` was a statistical programming language developed by John Chambers in 1976 at Bell labs. `S` was a properitory software and was not available for researchers.  **R**obert Gentleman and **R**oss Ihaka, University of Auckland, New Zealand came up with the idea of `R` as an free open source statistical language in 1992.  In 1995 they released its initial version and a stable beta version was released in 2000. Since `R` is implemented from `S` combined with lexical scoping semantics, inspired by Scheme. 
 
 The latest release (2018-12-20, Eggshell Igloo) R-3.5.2 .
 The Comprehensive R archive Network (CRAN : https://cran.r-project.org/) is a network of ftp and web servers around the world that store identical, upup-to-date, versions of code and documentation for R.

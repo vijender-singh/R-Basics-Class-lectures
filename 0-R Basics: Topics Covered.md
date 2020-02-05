@@ -1,4 +1,4 @@
-# R-From-Basics-to-advanced-analystics
+# R-Basics
 ## Topics covered
 ### R introduction
 ### Basics of R Object

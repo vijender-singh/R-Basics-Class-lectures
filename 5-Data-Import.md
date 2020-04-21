@@ -74,6 +74,13 @@ Functions to read data from common statistical tools is given in **Table1**
 
 visit [https://www.datacamp.com/community/tutorials/r-data-import-tutorial](https://www.datacamp.com/community/tutorials/r-data-import-tutorial)  for a Comprehensive Data Import tutorial covering everything from importing simple text files to the more advanced SPSS and SAS files.
 
+### Saving data/Objects from your R session
+
+There are 3 different options to save data from R session and it depends on the number of objects that user would like to save.
+1. `save.image(file="fileName.RData")` Save all objects from the current session.
+2. `save(object1,object2,file="fileName.RData")` Save few objects from the current session.
+3. `save(object1,file="fileName.rds")` Save one objects from the current session.  
+The save objects can be loaded using `load(file)`
 
 ### R Binary Files
 
@@ -90,20 +97,26 @@ chip2<-data.frame(Gene=c("Gene1","Gene2","Gene3","Gene4","Gene5","Gene6","Gene7"
 Chromosome = c("Chr1","Chr1","Chr1","Chr1","Chr2","Chr2","Chr2","Chr3","Chr3","Chr4"), Position=c(11234,21234,25452,32414,156009,297862,299220,312112,141789,13114),
 Enrichment=c(2,2.3,3.5,2.8,1.98,2.76,3.76,2.45,NA,3.4))
 #
-#Saving the object
-save(chip2,file="enrichment.rdata")
+#Saving one object
+save(chip2,file="enrichment.rds")
 #
 selectedPosn=c(12312,57867,46587)
 SampleName="Sample1"
 ReadDepth=124546654
 #
-#Saving the above all 4 objects in RData format
-save(chip2,selectedPosn,SampleName,ReadDepth,file="compact.rdata")
+#Saving the above all 3 objects in RData format
+save(chip2,selectedPosn,SampleName,file="compact.rdata")
+
+#Saving the entire session in RData format
+save.image(file="session.rdata")
 
 ```
 #### Reading Rdata
 ```R
+load("enrichment.rds")
 load("compact.rdata")
+load("session.rdata")
+
 ```
 ### Data included with R
 

@@ -7,6 +7,8 @@
 The latest release (2018-12-20, Eggshell Igloo) R-3.5.2 .
 The Comprehensive R archive Network (CRAN : https://cran.r-project.org/) is a network of ftp and web servers around the world that store identical, upup-to-date, versions of code and documentation for R.
 
+R studio link: https://rstudio.com/
+
 ### Packages:
 
 The primary reason for the popularity and success of R is its collection of user-contributed packages.

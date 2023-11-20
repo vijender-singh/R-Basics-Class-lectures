@@ -522,6 +522,7 @@ The function in R have varying degree of documentation available from very well 
 > ?mean
 > ?`+`
 > ?`==`
+> ?summary
 ```
 Sometimes we donot remember a function but have a sense about the functio, in such cases, `apropos()` function is very useful e.g
 ```R

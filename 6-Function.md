@@ -23,7 +23,7 @@ This `vectorMean` code can be used to find the mean of any vector of any length.
 
 ```{R}
 printName <- function(First,Last){
-  print(paste("First Name: ", First," Second Name: ",Last ))
+  print(paste("First Name: ", First," Second Name: ", Last ))
 }
 
 printName("Mac","Anderson")

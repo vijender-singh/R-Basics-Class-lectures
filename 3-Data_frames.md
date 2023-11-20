@@ -250,7 +250,7 @@ dfA
 
 In example below, a new column `cellcycle` is added to dataframe dfAB4.
 ```R
-cellcycle<-c("G1","G2","G1","M","S","S","M")
+cellcycle<-c("G1","G2","G1","M","S","M","M")
 
 dfAB4<-cbind(dfAB4,cellcycle)
 dfAB4

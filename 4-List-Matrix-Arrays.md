@@ -12,7 +12,7 @@ list(c("chr1","chr2","chr3"),c(12312,57867,46587))
 
 
 # List with mix of object types
-list(c("chr1","chr2","chr3"),c(12312,57867,46587),"Sample1",124546654)
+list(c("chr1","chr2","chr3"),c(12313,57867,46587),"Sample1",124546654)
 
 
 

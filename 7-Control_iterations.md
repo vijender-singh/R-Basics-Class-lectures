@@ -43,7 +43,7 @@ clientBalance <- function(currentBalance=0,deposit=0,withdrawl=0)
 {
   newBalance=currentBalance+deposit
   if ((newBalance-withdrawl) < 0 ){ 
-    print("Insufficient Funds")
+    print("Insufficient Funds, Withdrawl denied")
     }else if ((newBalance-withdrawl)==0 ){ 
      print("Transction is succesful.  Your funds are 0 (zero), please add more funds.")
      newBalance=newBalance-withdrawl

@@ -8,7 +8,7 @@ Write a R program to create a data frame from five given vectors.
 ## IronMan    42    157     65   M
 ## Hawkeye    32    167     54   M
 ## Hulk       36    175     72   M
-## Blackwidow 24    188     55   F
+## Blackwidow 24    189     55   F
 ## Wasp       36    168     68   F
 ## Thanos     43    153     120  M
 ## Okoye      32    173     59   F

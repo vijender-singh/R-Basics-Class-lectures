@@ -100,7 +100,7 @@ Enrichment=c(2,2.3,3.5,2.8,1.98,2.76,3.76,2.45,NA,3.4))
 #Saving one object
 save(chip2,file="enrichment.rds")
 #
-selectedPosn=c(12312,57867,46587)
+selectedPosn=c(12322,57867,46587)
 SampleName="Sample1"
 ReadDepth=124546654
 #

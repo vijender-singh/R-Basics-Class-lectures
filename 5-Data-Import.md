@@ -113,7 +113,7 @@ save.image(file="session.rdata")
 ```
 #### Reading Rdata
 ```R
-load("enrichment.rds")
+readRDS("enrichment.rds")
 load("compact.rdata")
 load("session.rdata")
 

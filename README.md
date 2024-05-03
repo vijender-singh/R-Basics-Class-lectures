@@ -1,5 +1,7 @@
 # Introduction to R for Biologists
 
+The video lectures of these lessons can be found on youtube: https://youtu.be/0eoalzFKmos?si=xL3U9ccAxW9WrQm8 
+
 Welcome to this comprehensive tutorial designed specifically for biologists venturing into the world of R, a powerful and versatile programming language that has become indispensable in modern biological research. The lecture material is still under development and new material will be added on regular intervals.
 
 ## Why R for Biologists?

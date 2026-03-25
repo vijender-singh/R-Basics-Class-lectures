@@ -18,7 +18,7 @@ In this tutorial, we will embark on a journey to unlock the potential of R in th
    
 3. **Data Manipulation and Analysis in R**: Dive into how to manipulate and analyze biological datasets using R packages like dplyr and tidyr.
    
-4. **Statistical Analysis in Biology**: Understand how to apply statistical methods in R to draw meaningful conclusions from your data.
+4. **Statistical Analysis in Biology**: Understand how to apply statistical methods in R and to draw meaningful conclusions from your data.
    
 5. **Creating Compelling Visualizations**: Learn how to use ggplot2 to create informative and attractive visualizations of your biological data.
    

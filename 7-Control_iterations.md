@@ -14,7 +14,7 @@ In a client account in a bank to keep a track of the account balance we have to 
 
 clientBalance <- function(currentBalance=0,deposit=0,withdrawl=0)
 {
-  newBalance=currentBalance+deposit
+  newBalance=currentBalance + deposit
   if ((newBalance-withdrawl) < 0 ){ 
     print("Insufficient Funds")
     }else{ 
